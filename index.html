@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
 <body>
-    Password Generator
+    <div id="password-generator">
+
+        <div class="text-section">
+            <h2 class="heading">
+                <span class="heading-line1">Generator a</span><br>
+                <span class="heading-line2">random password</span>
+            </h2>
+            <h4 class="sub-heading">Never use an insecure password again</h4>
+        </div>
+
+        <div class="setting-section">
+            <input type="number" placeholder="Enter length of password: 15" class="password-length" min="5" max="20" autofocus/>
+            <div>
+                <span class="toggle-option add-numbers">
+                    <span class="tick numbers-tick">✔</span>
+                    Add numbers
+                </span>
+                <span class="toggle-option add-symbols">
+                    <span class="tick symbols-tick">✔</span>
+                    Add symbols
+                </span>
+            </div>
+        </div>
+
+        <button class="password-generate-button">
+            Generator password
+        </button>
+
+        <hr>
+
+        <div class="passwords-section">
+            <div class="password password-1"></div>
+            <div class="password password-2"></div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

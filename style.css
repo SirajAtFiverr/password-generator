@@ -1,0 +1,111 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+    background-color: #5C677D;
+    color: white;
+}
+
+#password-generator{
+    width: 400px;
+    padding: 50px 25px;
+
+    background-color: #001233;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-section{
+    margin: 0;
+}
+
+.heading{
+    margin: 0;
+    line-height: 28px;
+}
+
+.heading-line1{
+    font-size: 32px;
+}
+
+.heading-line2{
+    font-size: 28px;
+    color: #ffbc42;
+}
+
+.sub-heading{
+    margin-top: 5px;
+    font-weight: normal;
+    color: ghostwhite;
+}
+
+.setting-section{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.password-length{
+    margin: 20px 0;
+    padding: 10px 5px;
+    background-color: #001233;
+    border: none;
+    border-bottom: 2px solid #ffbc42;
+    color: white;
+}
+
+.password-length:focus{
+    outline: none;
+}
+
+.toggle-option{
+    font-size: 16px;
+    padding: 5px 10px;
+    background-color: #001845;
+    margin: 10px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 white;
+}
+
+.tick{
+    color: #ffbc42;
+    opacity: 0.5;
+}
+
+.tick:hover{
+    opacity: 1;
+}
+
+
+.password-generate-button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffbc42;
+    color: #001845;
+    font-size: 16px;
+}
+.password-generate-button:hover{
+    background-color: rgba(255, 188, 66, 0.95);
+}
+
+hr{
+    margin: 25px auto;
+    height: 2px;
+    border: none;
+    background-color: #001845;
+}
+
+.passwords-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.password{
+    width: 180px;
+    height: 30px;
+    background-color: #001845;
+    color: #ffbc42;
+}
+
