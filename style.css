@@ -65,18 +65,19 @@ body{
     background-color: #001845;
     margin: 10px 10px;
     border-radius: 10px;
-    box-shadow: 0 0 6px 0 white;
+    box-shadow: 0 0 3px 0 white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.toggle-option:hover{
+    opacity: 1;
+    box-shadow: none;
 }
 
 .tick{
     color: #ffbc42;
-    opacity: 0.5;
 }
-
-.tick:hover{
-    opacity: 1;
-}
-
 
 .password-generate-button{
     padding: 10px 20px;
@@ -87,7 +88,7 @@ body{
     font-size: 16px;
 }
 .password-generate-button:hover{
-    background-color: rgba(255, 188, 66, 0.95);
+    background-color: rgba(255, 188, 66, 0.8);
 }
 
 hr{
