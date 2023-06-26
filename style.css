@@ -9,7 +9,7 @@ body{
 }
 
 #password-generator{
-    width: 400px;
+    width: 420px;
     padding: 50px 25px;
 
     background-color: #001233;
@@ -108,5 +108,10 @@ hr{
     height: 30px;
     background-color: #001845;
     color: #ffbc42;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 15px;
 }
 
