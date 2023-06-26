@@ -16,6 +16,7 @@ let addNumbersEl = document.getElementsByClassName("add-numbers")[0];
 let addSymbolsEl = document.getElementsByClassName("add-symbols")[0];
 let password1El = document.getElementsByClassName("password-1")[0];
 let password2El = document.getElementsByClassName("password-2")[0];
+let copyTextMessageEl = document.getElementsByClassName("copy-password-message")[0];
 
 addNumbersEl.addEventListener("click", function(){
     if(numbersAdded){
@@ -40,6 +41,25 @@ addSymbolsEl.addEventListener("click", function(){
         addSymbolsEl.style.boxShadow = 'none';
     }
 });
+
+password1El.addEventListener("click", function (){
+    if(!password1El.textContent) return ;
+    copyToClipboard(password1El.textContent);
+});
+
+password2El.addEventListener("click", function (){
+    if(!password2El.textContent) return ;
+    copyToClipboard(password2El.textContent);
+});
+
+function copyToClipboard(text){
+    navigator.clipboard.writeText(text);
+    copyTextMessageEl.style.visibility = "visible";
+
+    setTimeout(function(){
+        copyTextMessageEl.style.visibility = "hidden";
+    }, 2000);
+}
 
 function getRandomCharacter(characters){
     return characters[Math.floor(Math.random() * characters.length)]
